@@ -248,6 +248,9 @@ section{
 .navlist.open{
     right: 0;
     }
+    .hero-text h4{
+        margin-bottom: 4px;
+    }
 }
 @media (max-width: 680px){
     .hero-img img{
@@ -276,6 +279,7 @@ section{
     }
     .hero-text h4{
         font-size: 18px;
+        margin-bottom: 4px;
     }
     .hero-text h5{
         font-size: 25px;
