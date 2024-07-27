@@ -38,6 +38,9 @@ header{
 .navlist a:hover{
     border-bottom: 2px solid white;
 }
+.navlist a.active{
+    border-bottom: 2px solid #fff;
+}
 #menu-icon{
     font-size: 36px;
     color: white;
@@ -119,7 +122,7 @@ section{
     /* left: 200px; */
     padding: 0px 10%;
     transform: translateY(-50%);
-    position: fixed;
+    /* position: fixed; */
 }
 .icons i{
     color: white;
@@ -135,8 +138,8 @@ section{
 }
 .scroll-down{
     position: absolute;
-    bottom: 8%;
-    right: 10%;
+    bottom: 20%;
+    right: 5%;
 }
 .scroll-down i{
     color: white;
@@ -167,6 +170,7 @@ section{
         transition: .2s;
     }
 }
+
 @media (max-width: 1460px){
     section{
         padding: 0 12%;
@@ -179,13 +183,14 @@ section{
         height: auto;
     }
     .hero-text h1{
-        font-size: 70px;
+        font-size: 60px;
         margin: 0 0 30px;
     }
     .hero-text h5{
         margin-bottom: 25px;
     }
 }
+
 @media (max-width: 1195px){
     section{
         padding: 0 5%;
@@ -230,7 +235,7 @@ section{
     top: 100%;
     right: -100%;
     width: 300px;
-    height: 40vh;
+    height: 50vh;
     background: #4d9559;
     /* backdrop-filter: blur(10px); */
     display: flex;
@@ -250,6 +255,9 @@ section{
     }
     .hero-text h4{
         margin-bottom: 4px;
+    }
+    .logo{
+        font-size: 25px;
     }
 }
 @media (max-width: 680px){
@@ -286,5 +294,187 @@ section{
     }
     .icons a i{
         font-size: 16px;
+    }
+}
+
+section.fn{
+    padding: 0 12%;
+    position: relative;
+}
+.fn{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url(/goblinPage/img/fn1117709.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(250deg, #4d9559 0%, #38703d 25%,#133917 75%); */
+}
+.container{
+    padding-top: 170px;
+}
+.container h6{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.container h1{
+    font-size: 100px;
+    color: #fff;
+    margin: 10px 0 20px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+}
+.container h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.container p{
+    width: 40%;
+    max-width: 100%;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.889);
+    font-weight: 600;
+}
+.container a{
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    padding: 9px 25px;
+    border: 1px solid #fff;
+    line-height: 1.4;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.container a:hover{
+    transform: scale(1.06);
+    color: #fff;
+    background: transparent;
+    border: 1px solid #f5dca8;
+    margin-left: 20px;
+}
+.container a.ctaa{
+    /* border: 2px solid #f5dca8;
+    color: #fff; */
+    background: transparent;
+    margin-left: 20px;
+}
+.container a.ctaa i{
+    margin-right: 9px;
+}
+.container a.download i{
+    margin-right: 9px;
+}
+.container a.download:hover{
+    margin-top: 15px;
+}
+.social {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    /* padding-right: 20px; */
+    transform: translateY(-35%);
+}
+.social a i{
+    display: block;
+    color: #fbfbfb;
+    /* margin-right: 20px ; */
+    margin-bottom: 15px;
+    font-size: 26px;
+    transition: all 0.5s ease;
+}
+.social i:hover{
+    color: #8f610b;
+    transform: translateY(-8px);
+}
+.main-btnn{
+    padding-bottom: 150px;
+}
+.main-btnn a{
+    margin-bottom: 10px;
+}
+.main-btnn .ctaa{
+    color: rgb(232, 106, 38);
+    font-size: 16px;
+    font-weight: bold;
+}
+/* fortnite */
+@media (max-width: 1450px) {
+    .fn>.container h1{
+        font-size: 70px;
+        transition: .2s;
+    }
+    .fn>.container p{
+        font-size: 15px;
+        transition: .2s;
+    }
+}
+@media (max-width: 1050px) {
+    .fn>.main-btnn{
+        padding-bottom: 140px;
+    }
+}
+@media (max-width: 770px) {
+    .fn>.main-btnn{
+        padding-bottom: 40px;
+    }
+    .fn>.container p{
+        width: 80%;
+    }
+    .social{
+        left: 3%;
+    }
+}
+@media (max-width: 450px) {
+   .container{
+    padding-top: 100px;
+   }
+   .fn>.container h1{
+    font-size: 60px;
+    transition: .2s;
+   }
+.fn>.container p{
+    font-size: 14px;
+    transition: .2s;
+    width: 70%;
+    color: #fff;
+   }
+   .fn>.container h6{
+    margin-top: 20px;
+   }
+   .fn>.social i{
+    font-size: 20px;
+   }
+   .fn>.main-btnn {
+    padding-bottom: 70px;
+   }
+}
+@media (max-width: 325px) {
+    .fn>.container{
+        padding-top: 10px;
+    }
+    .fn>.container h1{
+        font-size: 50px;
+    }
+    .fn>.container h6{
+        font-size: 16px;
+        padding-bottom: 4px;
+    }
+    .fn>.container h3{
+        padding-bottom: 8px;
+        /* padding-top: 5px; */
+    }
+    .fn>.container p{
+        width: 90%;
+        color: #fff;
     }
 }
